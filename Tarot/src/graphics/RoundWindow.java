@@ -34,8 +34,8 @@ public class RoundWindow extends Window implements ActionListener, MouseListener
 	private JButton rule = new JButton("Regles");
 	
 	private static JLabel typePartie = new JLabel("Type de la partie :");
-	private static Object[] partyList = {"Prise", "Garde", "Garde Sans", "Garde Contre"};
-	private JComboBox choicepartyType = new JComboBox(partyList);
+	private static String[] partyList = {"Prise", "Garde", "Garde Sans", "Garde Contre"};
+	private JComboBox<String> choicepartyType = new JComboBox<String>(partyList);
 
 	private static JLabel quiPrend=new JLabel("Qui prend ?");
 	private ArrayList<JCheckBox> joueursQuiPrend = new ArrayList<JCheckBox>();
@@ -44,30 +44,30 @@ public class RoundWindow extends Window implements ActionListener, MouseListener
 	private ArrayList<JCheckBox> joueursPartenaires = new ArrayList<JCheckBox>();
 
 	private static JLabel finalement= new JLabel("Finalement :");
-	private static Object[] faiteList = {"Gagnee","Perdue"};
-	private JComboBox faiteOuNon = new JComboBox(faiteList);
+	private static String[] faiteList = {"Gagnee","Perdue"};
+	private JComboBox<String> faiteOuNon = new JComboBox<String>(faiteList);
 	private JTextField ecart = new JTextField("... de combien?");
 	
 	private JCheckBox chelemAnounced = new JCheckBox("Annonce Chelem");
 	private ArrayList<JCheckBox> playersChelem = new ArrayList<JCheckBox>();
 	private JCheckBox chelemRealise = new JCheckBox("Chelem Realise (Non)");
 		
-	private static Object[] listePetitAuBout = {"Attaquants","Defenseurs"};
+	private static String[] listePetitAuBout = {"Attaquants","Defenseurs"};
 	private JCheckBox petitAuBout = new JCheckBox("Petit au bout");
-	private JComboBox petitAuBoutAQui = new JComboBox(listePetitAuBout);
+	private JComboBox<String> petitAuBoutAQui = new JComboBox<String>(listePetitAuBout);
 
 	private static int[] nbCards_3p = {0,13,15,18};
 	private static int[] nbCards_4p = {0,10,13,15};
 	private static int[] nbCards_5p = {0,8,10,13};
 	private int[] nbCardsPoigne;
-	private Object[] listePoigne = {"Aucune","Simple","Double","Triple"};
+	private String[] listePoigne = {"Aucune","Simple","Double","Triple"};
 	private JCheckBox poigne;
-	private ArrayList<JComboBox> playersPoignee= new ArrayList<JComboBox>();
+	private ArrayList<JComboBox<String>> playersPoignee= new ArrayList<JComboBox<String>>();
 	
 	
-	private static Object[] listeMisere = {"Aucune","Simple","Double"};
+	private static String[] listeMisere = {"Aucune","Simple","Double"};
 	private JCheckBox misere = new JCheckBox("Misere");
-	private ArrayList<JComboBox> playersMisere = new ArrayList<JComboBox>();
+	private ArrayList<JComboBox<String>> playersMisere = new ArrayList<JComboBox<String>>();
 	
 	private JButton calculer = new JButton("Calculer");
 	private JButton annuler = new JButton("Annuler");
@@ -104,10 +104,10 @@ public class RoundWindow extends Window implements ActionListener, MouseListener
 		for (Player player : this.F.players) {
 			joueursPartenaires.add(new JCheckBox(player.getName()));
 			playersChelem.add(new JCheckBox(player.getName()));
-			playersMisere.add(new JComboBox(listeMisere));			
+			playersMisere.add(new JComboBox<String>(listeMisere));			
 		}
 
-		for (JComboBox playerMisere : playersMisere) {
+		for (JComboBox<String> playerMisere : playersMisere) {
 			playerMisere.setEnabled(false);
 		}
 		
@@ -131,7 +131,7 @@ public class RoundWindow extends Window implements ActionListener, MouseListener
 		}
 		
 		for (int i=0 ; i<nbPlayers ; i++) {
-			JComboBox tmpBox = new JComboBox(listePoigne);
+			JComboBox<String> tmpBox = new JComboBox<String>(listePoigne);
 			
 			playersPoignee.add(tmpBox);
 			tmpBox.setEnabled(false);
@@ -185,7 +185,7 @@ public class RoundWindow extends Window implements ActionListener, MouseListener
 		c.gridy=1;
 		this.add(poigne,c);
 		
-		for (JComboBox playerPoigne : playersPoignee) {
+		for (JComboBox<String> playerPoigne : playersPoignee) {
 			c.gridy++;
 			this.add(playerPoigne,c);
 		}
@@ -194,7 +194,7 @@ public class RoundWindow extends Window implements ActionListener, MouseListener
 		c.gridy=1;
 		this.add(misere,c);
 		
-		for (JComboBox playerMisere : playersMisere) {
+		for (JComboBox<String> playerMisere : playersMisere) {
 			c.gridy++;
 			this.add(playerMisere,c);
 		}
@@ -255,7 +255,7 @@ public class RoundWindow extends Window implements ActionListener, MouseListener
 		chelemAnounced.addMouseListener(this);
 		chelemRealise.addMouseListener(this);
 		
-		for (JComboBox playerPoigne : playersPoignee) {
+		for (JComboBox<String> playerPoigne : playersPoignee) {
 			playerPoigne.addMouseListener(this);
 		}
 		
@@ -338,7 +338,7 @@ public class RoundWindow extends Window implements ActionListener, MouseListener
 			ArrayList<String> valuesPoigne = new ArrayList<String>();
 			if (isPoigne) {
 				int totalCount = 0;
-				for (JComboBox poigneValue : playersPoignee) {
+				for (JComboBox<String> poigneValue : playersPoignee) {
 					valuesPoigne.add(poigneValue.getSelectedItem().toString());
 					totalCount += nbCardsPoigne[poigneValue.getSelectedIndex()];
 				}
@@ -380,7 +380,7 @@ public class RoundWindow extends Window implements ActionListener, MouseListener
 			boolean isMisere = misere.isSelected();
 			ArrayList<String> valuesMisere = new ArrayList<String>();
 			if (isMisere) {
-				for (JComboBox misereValue : playersMisere) {
+				for (JComboBox<String> misereValue : playersMisere) {
 					valuesMisere.add(misereValue.getSelectedItem().toString());
 				}
 			}
@@ -512,7 +512,7 @@ public class RoundWindow extends Window implements ActionListener, MouseListener
 		}
 		
 		if(arg0.getSource()==misere){
-			for (JComboBox playerMisere : playersMisere) {
+			for (JComboBox<String> playerMisere : playersMisere) {
 				playerMisere.setEnabled(misere.isSelected()==true);
 			}
 		}
@@ -522,7 +522,7 @@ public class RoundWindow extends Window implements ActionListener, MouseListener
 		}
 		
 		if(arg0.getSource()==poigne){
-			for (JComboBox playerPoigne : playersPoignee) {
+			for (JComboBox<String> playerPoigne : playersPoignee) {
 				playerPoigne.setEnabled(poigne.isSelected()==true);
 			}
 		}
