@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   repos="https://the-fellowship-of-android.googlecode.com/svn"
+   name=""
+   revision="70"
+   last-author="autiwa@gmail.com"
+   url="https://the-fellowship-of-android.googlecode.com/svn/trunk/Tarot/src/game"
+   uuid="144737d8-2def-1347-28e5-1f5dd83d9012"
+   committed-rev="67"
+   kind="dir"
+   committed-date="2013-02-10T18:18:58.438688Z"/>
+<entry
+   name="Player.java"
+   checksum="e59519b0c9b2d678ba5fa078442685d3"
+   last-author="autiwa@gmail.com"
+   committed-rev="58"
+   text-time="2012-12-28T20:13:16.000000Z"
+   kind="file"
+   committed-date="2012-12-28T21:39:32.358000Z"/>
+<entry
+   name="Round.java"
+   checksum="cc8d114e46bf1a9fa9cfc003dd20df3e"
+   last-author="autiwa@gmail.com"
+   text-time="2013-02-10T08:39:18.000000Z"
+   committed-rev="67"
+   kind="file"
+   committed-date="2013-02-10T18:18:58.438000Z"/>
+</wc-entries>

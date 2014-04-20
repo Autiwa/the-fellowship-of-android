@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   repos="https://the-fellowship-of-android.googlecode.com/svn"
+   name=""
+   revision="70"
+   last-author="autiwa@gmail.com"
+   url="https://the-fellowship-of-android.googlecode.com/svn/trunk/Tarot/bin"
+   uuid="144737d8-2def-1347-28e5-1f5dd83d9012"
+   committed-rev="43"
+   kind="dir"
+   committed-date="2012-08-23T23:07:06.650466Z"/>
+</wc-entries>

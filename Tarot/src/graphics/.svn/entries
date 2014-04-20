@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   name=""
+   repos="https://the-fellowship-of-android.googlecode.com/svn"
+   revision="70"
+   last-author="autiwa@gmail.com"
+   uuid="144737d8-2def-1347-28e5-1f5dd83d9012"
+   url="https://the-fellowship-of-android.googlecode.com/svn/trunk/Tarot/src/graphics"
+   committed-rev="70"
+   kind="dir"
+   committed-date="2013-02-10T21:34:29.516871Z"/>
+<entry
+   name="ErrorWindow.java"
+   checksum="5ad2d24215ec3d859f4efb343ed8415b"
+   last-author="autiwa@gmail.com"
+   text-time="2012-08-25T23:29:58.000000Z"
+   committed-rev="51"
+   kind="file"
+   committed-date="2012-08-25T23:29:58.426597Z"/>
+<entry
+   name="MainWindow.java"
+   revision="77"
+   checksum="9392b2a28fe43addc3cc1fe04e807cad"
+   last-author="autiwa@gmail.com"
+   committed-rev="77"
+   text-time="2014-01-10T23:11:08.000000Z"
+   kind="file"
+   committed-date="2014-01-10T23:12:28.152000Z"/>
+<entry
+   name="NameWindow.java"
+   checksum="aec6792abde08e91237eb71fd62314ce"
+   last-author="autiwa@gmail.com"
+   text-time="2012-08-25T23:29:58.000000Z"
+   committed-rev="51"
+   kind="file"
+   committed-date="2012-08-25T23:29:58.426597Z"/>
+<entry
+   name="Panel.java"
+   checksum="4ce0923731f1142b27ca28ebf94e87b5"
+   last-author="autiwa@gmail.com"
+   text-time="2012-08-25T23:29:58.000000Z"
+   committed-rev="51"
+   kind="file"
+   committed-date="2012-08-25T23:29:58.426597Z"/>
+<entry
+   name="RoundWindow.java"
+   revision="77"
+   checksum="80a39a686e5b11951b29958aae07f39e"
+   last-author="autiwa@gmail.com"
+   text-time="2014-01-10T23:11:47.000000Z"
+   committed-rev="77"
+   kind="file"
+   committed-date="2014-01-10T23:12:28.152000Z"/>
+<entry
+   name="RuleWindow.java"
+   revision="75"
+   checksum="31ab64877bf521850294b40e1f00e49f"
+   last-author="autiwa@gmail.com"
+   committed-rev="75"
+   text-time="2013-12-22T09:10:14.000000Z"
+   kind="file"
+   committed-date="2013-12-22T09:12:23.276000Z"/>
+<entry
+   name="Window.java"
+   checksum="8651a05655f00b7d19ee797931e58b9d"
+   last-author="autiwa@gmail.com"
+   text-time="2012-12-29T00:23:49.000000Z"
+   committed-rev="61"
+   kind="file"
+   committed-date="2012-12-29T00:26:07.031000Z"/>
+<entry
+   name="WindowList.java"
+   checksum="b08c35f4a71419ee96618f1eaa07acca"
+   last-author="autiwa@gmail.com"
+   text-time="2012-12-29T00:23:03.000000Z"
+   committed-rev="61"
+   kind="file"
+   committed-date="2012-12-29T00:26:07.031000Z"/>
+</wc-entries>

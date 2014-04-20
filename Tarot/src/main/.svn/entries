@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   name=""
+   repos="https://the-fellowship-of-android.googlecode.com/svn"
+   revision="70"
+   last-author="autiwa@gmail.com"
+   uuid="144737d8-2def-1347-28e5-1f5dd83d9012"
+   url="https://the-fellowship-of-android.googlecode.com/svn/trunk/Tarot/src/main"
+   committed-rev="64"
+   kind="dir"
+   committed-date="2013-01-22T23:07:33.394283Z"/>
+<entry
+   name="Main.java"
+   revision="75"
+   checksum="421604148d4a1618489c720f8e41fc7d"
+   last-author="autiwa@gmail.com"
+   committed-rev="75"
+   text-time="2013-12-22T09:01:06.000000Z"
+   kind="file"
+   committed-date="2013-12-22T09:12:23.276000Z"/>
+</wc-entries>
