@@ -45,7 +45,7 @@ public class Main {
 		boolean isChelemAnounced = false;
 		boolean isChelemRealised = false;
 		Player playerChelem = null;
-		String valuePetitAuBout = null;
+		int valuePetitAuBout = 0;
 		boolean isMisere = false;
 		ArrayList<String> valuesMisere = null;
 		
@@ -75,7 +75,7 @@ public class Main {
 		isChelemAnounced = false;
 		isChelemRealised = false;
 		playerChelem = null;
-		valuePetitAuBout = "Attackers";
+		valuePetitAuBout = 1;
 		isMisere = false;
 		valuesMisere = null;
 		
@@ -95,7 +95,7 @@ public class Main {
 		isChelemAnounced = false;
 		isChelemRealised = false;
 		playerChelem = null;
-		valuePetitAuBout = "Defenders";
+		valuePetitAuBout = -1;
 		isMisere = false;
 		valuesMisere = null;
 		
@@ -115,7 +115,7 @@ public class Main {
 		isChelemAnounced = false;
 		isChelemRealised = false;
 		playerChelem = null;
-		valuePetitAuBout = "Attackers";
+		valuePetitAuBout = 1;
 		isMisere = false;
 		valuesMisere = null;
 		
@@ -135,7 +135,7 @@ public class Main {
 		isChelemAnounced = false;
 		isChelemRealised = false;
 		playerChelem = null;
-		valuePetitAuBout = null;
+		valuePetitAuBout = 0;
 		isMisere = false;
 		valuesMisere = null;
 		
@@ -155,7 +155,7 @@ public class Main {
 		isChelemAnounced = true;
 		isChelemRealised = true;
 		playerChelem = leader;
-		valuePetitAuBout = "Attackers";
+		valuePetitAuBout = 1;
 		isMisere = false;
 		valuesMisere = null;
 		
@@ -169,7 +169,7 @@ public class Main {
 	private static void testOneRound(ArrayList<Player> players, String partyType, Player leader, Player partner, 
 			boolean won, int remainingPoints, boolean isPoigne, ArrayList<String> valuesPoigne, 
 			boolean isChelemAnounced, boolean isChelemRealised, Player playerChelem, 
-			String petitAuBout, boolean isMisere, ArrayList<String> valuesMisere, 
+			int petitAuBout, boolean isMisere, ArrayList<String> valuesMisere, 
 			ArrayList<Integer> expectedScore) {
 		
 		// The output

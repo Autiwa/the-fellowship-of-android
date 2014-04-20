@@ -19,7 +19,7 @@ public class Round {
 	private boolean isChelemRealised;
 	private Player playerChelem;
 
-	private String petitAuBout;
+	private int petitAuBout;
 	
 	private boolean isMisere;
 	private ArrayList<String> valuesMisere;
@@ -36,7 +36,7 @@ public class Round {
 	public Round(ArrayList<Player> players, String partyType, Player leader, Player partner, 
 			boolean won, int remainingPoints, boolean isPoigne, ArrayList<String> valuesPoigne, 
 			boolean isChelemAnounced, boolean isChelemRealised, Player playerChelem, 
-			String petitAuBout, boolean isMisere, ArrayList<String> valuesMisere) {
+			int petitAuBout, boolean isMisere, ArrayList<String> valuesMisere) {
 		super();
 		this.players = players;
 		this.partyType = partyType;
@@ -92,9 +92,9 @@ public class Round {
 			indivDefender = absoluteAttackerScore;
 		}
 		
-		if (this.petitAuBout == "Attaquants") {
+		if (this.petitAuBout == 1) {
 			indivDefender -= 10;
-		} else if (this.petitAuBout == "Defenseurs") {
+		} else if (this.petitAuBout == -1) {
 			indivDefender += 10;
 		}
 		

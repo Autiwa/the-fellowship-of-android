@@ -362,9 +362,19 @@ public class RoundWindow extends Window implements ActionListener, MouseListener
 			}
 			
 			
-			String valuePetitAuBout = "";
+			String tmpPetit = "";
+			int valuePetitAuBout = 0;
 			if (petitAuBout.isSelected()) {
-				valuePetitAuBout = petitAuBoutAQui.getSelectedItem().toString();
+				tmpPetit = petitAuBoutAQui.getSelectedItem().toString();
+				
+				// We attribute an int value, so that, the language doesn't have an influence on the value
+				if (tmpPetit == listePetitAuBout[0]) {
+					valuePetitAuBout = 1;
+				} else if (tmpPetit == listePetitAuBout[1]) {
+					valuePetitAuBout = -1;
+				} else {
+					valuePetitAuBout = 0;
+				}
 			}
 			
 			boolean isMisere = misere.isSelected();
